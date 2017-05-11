@@ -24,6 +24,6 @@ for fil in my_range(1,6,1):
 				if col<=31:
 					print contador,
 					contador=contador+1
-				else:
+				else:	# SINO SE CUMPLE LA ANTERIOR CONDICION, ENTONCES
 					print " ",
 	print ""	# HACEMOS UN SALTO DE LINEA (intro) CADA VEZ QUE SALGAMOS DEL FOR DE COLUMNAS
