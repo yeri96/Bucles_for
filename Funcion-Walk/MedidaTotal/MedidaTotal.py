@@ -19,3 +19,4 @@ for root, dirs, files in os.walk(path_to_explore):		# UTILIZAMOS LA FUNCION WALK
         print(name_path) ,
         print os.stat(name_path).st_size
         total_size=total_size+os.stat(name_path).st_size	# CALCULAMOS EL TAMAÑO DE CADA DIRECTORIO
+print "El tamaño total en B es:" , total_size
