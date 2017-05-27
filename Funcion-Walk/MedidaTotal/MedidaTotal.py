@@ -11,11 +11,11 @@ for root, dirs, files in os.walk(path_to_explore):		# UTILIZAMOS LA FUNCION WALK
         name_path=os.path.join(root, name)
         print(name_path) ,
         print os.stat(name_path).st_size
-        total_size=total_size+os.stat(name_path).st_size	# CALCULAMOS EL TAMAÑO TOTAL DE TODOS LOS ARCHIVOS
+        total_size=total_size+os.stat(name_path).st_size	# CALCULAMOS EL TAMAÑO DE CADA ARCHIVO
  
  
     for name in dirs:
         name_path=os.path.join(root, name)
         print(name_path) ,
         print os.stat(name_path).st_size
-        total_size=total_size+os.stat(name_path).st_size	# CALCULAMOS EL TAMAÑO TOTAL DE TODOS LOS DIRECTORIOS
+        total_size=total_size+os.stat(name_path).st_size	# CALCULAMOS EL TAMAÑO DE CADA DIRECTORIO
